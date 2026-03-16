@@ -2,7 +2,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-DB_URL = f"mysql+pymysql://prueba:prueba@localhost:3306/prueba"
+#DB_URL = f"mysql+pymysql://prueba:prueba@localhost:3306/prueba"
+DB_URL = f"mysql+pymysql://root:PWfEJaAHkZhtImZlvLFdsjexTTkCLfAI@gondola.proxy.rlwy.net:173523/railway"
 
 engine = create_engine(DB_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
