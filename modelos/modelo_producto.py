@@ -68,4 +68,4 @@ class Pedido(Base):
     id_pedido = Column(Integer, primary_key=True, autoincrement=True)
     id_usuario = Column(Integer, ForeignKey("usuarios.id_usuario"))
     fecha_pedido = Column(DateTime, default=func.now())
-    e
+    
